@@ -11,47 +11,60 @@
         body{
 
             font-family: sans-serif;
-            --color:rgb(127, 208, 255);
+            --color:rgb(109, 181, 223);
         }
 
         .row{
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
             
-            gap: 20px;
-
-            max-width: 600px;
+            gap: 30px;
+            
+            max-width: 700px;
             width: 90%;
             margin: 0 auto;
 
             
+
+            
         }
 
+        .tile{
+            box-sizing: border-box;
+            box-shadow:4px 4px 4px whitesmoke ;
+            
+           
+        }
         .row::after{
             content: "";
             display: block;
             clear: left;
         }
 
-        .box{
-            width: 16,66%;
-            height: 100px;
-            box-sizing: border-box;
-            border-radius: 10px 10px 0 0;
+        .tile-background{
+            height: 60px;
+           
             padding: 10px;
-            background-color:var(--color);
+            border-radius: 10px 10px 0 0;
 
-            background: var(--color);
+            background-color:var(--color);
             background-repeat: no-repeat;
             background-size: contain;
             background-image: url("placeholder-image.png");
+        }
+
+        .tile-text{
+            font-size: 10px;
+            margin: 5px 0;
+            padding-left: 25px;
+                
         }
 
         #wraper{
             display: grid;
             grid-template-rows: 1fr,1fr;
 
-            max-width:600px ;
+            max-width:700px ;
             width: 90%;
             margin: 0 auto;
             
@@ -65,44 +78,26 @@
         
 
         @media screen and(max-width: 1024px) {
-            .row{
+            .tile{
                 
                 width: 33,33%;
             }
 
-            .box{
-
-               background: var(--color);
-            }    
-
-
         }
 
          @media screen and(max-width: 768px) {
-             .row{
+             .tile{
    
                    width: 50%;
               }
 
-             .box{
-
-                     background: var(--color);
-    
-                }
-
-
             }
 
          @media screen and(max-width: 414px) {
-                  .row{
+                  .tile{
    
                        width: 100%;
                     }
-
-                   .box{
-
-                        background: var(--color);
-                     } 
 
             }
  
@@ -111,17 +106,52 @@
 </head>
 <body>
     <div class="row">
+         <div class="tile">
+            <div class="tile-background"></div>
+            <div class="tile-text">Image Title</div>
+         </div>
+         <div class="tile">
+            <div class="tile-background"></div>
+            <div class="tile-text">Image Title</div>
+         </div>
+         <div class="tile">
+            <div class="tile-background"></div>
+            <div class="tile-text">Image Title</div>
+         </div>
+         <div class="tile">
+            <div class="tile-background"></div>
+            <div class="tile-text">Image Title</div>
+         </div>
+         <div class="tile">
+            <div class="tile-background"></div>
+            <div class="tile-text">Image Title</div>
+         </div>
+         <div class="tile">
+            <div class="tile-background"></div>
+            <div class="tile-text">Image Title</div>
+         </div>
+         <div class="tile">
+            <div class="tile-background"></div>
+            <div class="tile-text">Image Title</div>
+         </div>
+         <div class="tile">
+            <div class="tile-background"></div>
+            <div class="tile-text">Image Title</div>
+         </div>
+         <div class="tile">
+            <div class="tile-background"></div>
+            <div class="tile-text">Image Title</div>
+         </div>
+         <div class="tile">
+            <div class="tile-background"></div>
+            <div class="tile-text">Image Title</div>
+         </div>
+
+
+    </div>
+     
+
         
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
 
        
 
